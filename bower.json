@@ -1,0 +1,13 @@
+{
+        "name": "paging",
+        "version": "0.1.0",
+        "description": "The pagination made simple. even you using any front-end enviroment.",
+        "keywords": ["page","paging","pagination"],
+        "authors": ["Composite"],
+        "license": "MIT",
+        "homepage": "https://github.com/composite/paging",
+        "main": ["paging.min.js"],
+        "ignore": ["*.json"],
+        "dependencies": {},
+        "devDependencies": {}
+}
