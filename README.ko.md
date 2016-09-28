@@ -1,26 +1,26 @@
-# Jquery Paging
+# Pagings
 
-0.2.0
+0.1.0
 
-당신이 어떤 프론트엔드 환경을 쓰던 페이징은 한결같이 심플하게.
+당신이 어떤 프론트엔드 환경을 쓰던 페이징은 한결같이 **종속성 없이** 심플하게.
 
 ## 설치
 
-`bower install jquery.paging`
+`bower install pagings`
 
 또는 ZIP 파일을 다운로드 후 원하는 스크립트 폴더에 풀기.
 
-requirements: `jquery >= 1.5.0`
+요구사항: `그딴거없다.`
 
 ## 사용법
 
 ```js
 //더이상 심플하게 설명이 필요한가?
-$('#paging').paging({max:50});
+Paging(document.querySelector('#paging'), {max:50});
 //한번 호출 후, 다음 호출은 속성을 생략해도 설정한 값이 유지되어 일부 속성만으로 호출 가능.
-$('#paging').paging({current:2}); //앞서 설정한 50페이지 중 1 페이지에서 2 페이지로 이동 효과.
+Paging(document.querySelector('#paging'), {current:2}); //앞서 설정한 50페이지 중 1 페이지에서 2 페이지로 이동 효과.
 //컨테이너에 페이징을 없애고자 할 경우 아래처럼 코딩하여 해결 가능.
-$('#paging').paging('destroy');
+Paging.destroy(document.querySelector('#paging'));
 ```
 
 ### `paging` 옵션
@@ -58,9 +58,9 @@ event=true 일 때 가능한 이벤트 정의..
 
 >`onclick` : 페이징 버튼 클릭 시 호출. false 반환 시 동적으로 페이지가 바뀌지 않음. 동적 페이징을 원하지만 href로 인한 링크 이동을 원하지 않을 경우 이벤트 메서드인 `event.stopPropagation()` 호출.
 
->`onprev` : 이전 버튼 초기화 시 이벤트. `this` 는 이전 버튼 요소를 가리킴.(plain DOM. not jQuery!)
+>`onprev` : 이전 버튼 초기화 시 이벤트. `this` 는 이전 버튼 요소를 가리킴.
 
->`onnext` : 다음 버튼 초기화 시 이벤트. `this` 는 다음 버튼 요소를 가리킴.(plain DOM. not jQuery!)
+>`onnext` : 다음 버튼 초기화 시 이벤트. `this` 는 다음 버튼 요소를 가리킴.
 
 >`onitem` : 각 페이지 버튼 초기화 시 이벤트. `this` 는 각 페이지 버튼 요소를 가리킴.
 
@@ -86,20 +86,15 @@ event=true 일 때 가능한 이벤트 정의..
 
 [jsFiddle](https://jsfiddle.net/composite/8eyccoft/)
 
+## FAQ
+
+### 이 라이브러리에 꾸미는 옵션이 있는가?
+
+**그런거 난 모른다. 그저 얘는 페이징을 만들어 줄 뿐, 스타일시트 옵션 따위 모른다. 대신 스타일시트 클래스를 제공하니 거기 안에서 알아서 하도록.**
+
 ## 판올림 내역
 
-- 0.2.1 : 다음 버튼과 마지막 페이지 버튼 표시조건 문제 수정
-- 0.2.0 :
-불필요한 append 옵션 삭제.
-컨테어너 요소 관리가 용이하도록 className 속성 추가.
-재호출 시를 위해 페이징이 초기화된 요소에 옵션이 저장됨.
-- 0.1.7 : onclick 이벤트 기능 향상.
-- 0.1.6 : first 또는 last 내용에 false 설정시 만들지 않도록 기능 추가.
-- 0.1.5 :
-처음 페이지 및 마지막 페이지 추가. 내용에 치환자 적용 가능.
-'append' 옵션 추가 : true 설정 시 기존 내용이 삭제되지 않고 포함됨.
-{6} 치환자는 마지막 페이지(max 값과 동일) 를 가리킴.
-- 0.1.0 : 초기 버전.
+- 0.1.0 : [jQeury.paging](https://github.com/composite/jQuery.paging)에서 마이그레이션으로 넘어옴.
 
 
 ## 라이선스

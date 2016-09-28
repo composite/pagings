@@ -1,5 +1,5 @@
 /*!************************************************************************************
- * Paging 0.1.0
+ * Pagings 0.1.0
  * by composite (ukjinplant@msn.com)
  * http://hazard.kr
  * This project licensed under a MIT License.
@@ -9,7 +9,7 @@
 	//default properties.
 	var a=/a/i,defs={
 		item:'a',next:'[&gt;{5}]',prev:'[{4}&lt;]',format:'[{0}]',
-		itemClass:'paging-item',sideClass:'paging-side',className:'jquery-paging',
+		itemClass:'pagings-item',sideClass:'pagings-side',className:'pagings-area',
 		itemCurrent:'selected',length:10,max:1,current:1,append:false
 		,href:'#{0}',event:true,first:'[1&lt;&lt;]',last:'[&gt;&gt;{6}]',
 		onclick:null,onprev:null,onnext:null,onitem:null
