@@ -1,13 +1,28 @@
 {
-        "name": "pagings",
-        "version": "0.1.0",
-        "description": "The pagination made simple. even you using any front-end enviroment.",
-        "keywords": ["page","paging","pagination"],
-        "authors": ["Composite"],
-        "license": "MIT",
-        "homepage": "https://github.com/composite/pagings",
-        "main": ["pagings.min.js"],
-        "ignore": ["*.json"],
-        "dependencies": {},
-        "devDependencies": {}
+  "name": "pagings",
+  "version": "0.1.0",
+  "description": "The pagination made simple. even you using any front-end enviroment.",
+  "keywords": [
+    "page",
+    "paging",
+    "pagination"
+  ],
+  "authors": [
+    "Composite"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/composite/pagings",
+  "main": [
+    "pagings.js"
+  ],
+  "ignore": [
+    "*.json",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "devDependencies": {}
 }
